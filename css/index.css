@@ -237,3 +237,15 @@ img{
 .curso__info{
     font-size: 2rem;
 }
+
+/*Entrada*/
+
+.entrada__imagen{
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+/*Contacto*/
+.contacto-bg{
+    background-image: url(../img/contacto.jpg);
+}
