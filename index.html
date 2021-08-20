@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de cafe</title>
+    <meta name="description" content="Pagina web de cafe">
+
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="css/index.css" as="style">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -41,7 +47,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog1.jpg" alt="imagen blog">
+                    <picture>
+                        <source srcset="img/blog1.webp" type="img/webp">
+                        <img src="img/blog1.jpg" alt="imagen blog" loading="lazy">
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
@@ -58,7 +67,11 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="imagen blog">
+                    
+                    <picture>
+                        <source srcset="img/blog2.webp" type="img/webp">
+                        <img src="img/blog2.jpg" alt="imagen blog" loading="lazy">
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
@@ -75,7 +88,11 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog3.jpg" alt="imagen blog">
+                    
+                    <picture>
+                        <source srcset="img/blog3.webp" type="img/webp">
+                        <img src="img/blog3.jpg" alt="imagen blog" loading="lazy">
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
@@ -139,5 +156,6 @@
         </div>
    </footer>
     
+   <script src="js/modernizr.js"></script>
 </body>
 </html>

@@ -62,6 +62,13 @@ img{
 }
 
 /*Header code*/
+.webp .header{
+    background-image: url(../img/banner.webp);
+}
+
+.no-webp .header{
+    background-image: url(../img/banner.jpg);
+}
 .header{
     background-image: url(../img/banner.jpg);
     height: 60rem;
@@ -139,6 +146,10 @@ img{
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
+}
+.boton:hover{
+    cursor: pointer;
 }
 
 @media(min-width: 768px) {
@@ -248,4 +259,34 @@ img{
 /*Contacto*/
 .contacto-bg{
     background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario{
+    background-color: var(--blanco);
+    width: 95%;
+    margin: -5rem auto 0 auto;
+    padding: 5rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+}
+
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+
+.campo__field--textarea{
+    height: 20rem;
 }
